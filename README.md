@@ -13,9 +13,11 @@ This will pull every printer on the nework
    
    b) Create an AD site and matching subnet <img width="702" height="210" alt="image" src="https://github.com/user-attachments/assets/16ffb81d-5679-44b6-98ea-89885581633d" />
       
-   c) Link AD site to GPO      <img width="676" height="421" alt="image" src="https://github.com/user-attachments/assets/dad8166e-5516-4a22-a884-abc5bb58bc55" />
+   c) Link AD site to GPO
+   
+   <img width="676" height="421" alt="image" src="https://github.com/user-attachments/assets/dad8166e-5516-4a22-a884-abc5bb58bc55" />
 
-4) Add Printers to Windows universal print server
+5) Add Printers to Windows universal print server
    This moves the printing to the MS cloud, but has 2 requirements. First it requires a e3,e5 or standalone license., and it limits your printing to 100 print jobs a month
    a) install the Universla Print connector on the print server
         ![alt text](image-5.png)
@@ -23,7 +25,7 @@ This will pull every printer on the nework
     b) register printers
     ![alt text](image-1.png)
 
-5) Create and deploy 2 scripts that will a) monitor the print server(s) for any updates and update a .csv file with those changes and b) Add a desktop shortcut in a folder for each printer in the building.
+6) Create and deploy 2 scripts that will a) monitor the print server(s) for any updates and update a .csv file with those changes and b) Add a desktop shortcut in a folder for each printer in the building.
     ServerUpdate.ps1 : checks the printer for all of its printers and get the name, location, and creates a UNC path
     DesktopPrinterScript.ps1 : get the computers IP address, checkls it  again the network page to determine the subnet its on, and checks that location against
     locations in _ServerUpdate.ps1_ for any matches. Desktop shortcuts are created for each match.
