@@ -13,7 +13,7 @@ This will pull every printer on the nework
    
    b) Create an AD site and matching subnet <img width="702" height="210" alt="image" src="https://github.com/user-attachments/assets/16ffb81d-5679-44b6-98ea-89885581633d" />
       
-   c) Link AD site to GPO <img width="676" height="421" alt="image" src="https://github.com/user-attachments/assets/dad8166e-5516-4a22-a884-abc5bb58bc55" />
+   c) Link AD site to GPO      <img width="676" height="421" alt="image" src="https://github.com/user-attachments/assets/dad8166e-5516-4a22-a884-abc5bb58bc55" />
 
 4) Add Printers to Windows universal print server
    This moves the printing to the MS cloud, but has 2 requirements. First it requires a e3,e5 or standalone license., and it limits your printing to 100 print jobs a month
