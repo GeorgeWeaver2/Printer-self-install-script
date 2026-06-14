@@ -11,8 +11,10 @@ This will pull every printer on the nework
 3) Use a GPO to automaticaly install printers by location
     a) Create GPO object 
    <img width="754" height="417" alt="image" src="https://github.com/user-attachments/assets/f725e64d-b9b8-4d1d-8c3c-c872f99d45aa" />
+   
    b) Create an AD site and matching subnet
       <img width="702" height="210" alt="image" src="https://github.com/user-attachments/assets/16ffb81d-5679-44b6-98ea-89885581633d" />
+      
    c) Link AD site to GPO
    <img width="676" height="421" alt="image" src="https://github.com/user-attachments/assets/dad8166e-5516-4a22-a884-abc5bb58bc55" />
 
